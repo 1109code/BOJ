@@ -3,12 +3,10 @@
 from math import sqrt
 x, y, c = map(float, input().split())
 
-
-
 start = 0
 end = min(x, y)
 
-while end - start > 1e-6:
+while end - start > 1e-3:
     mid = (end + start) / 2
     h1 = sqrt(x ** 2 - mid ** 2)
     h2 = sqrt(y ** 2 - mid ** 2)
